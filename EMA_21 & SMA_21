@@ -1,0 +1,6 @@
+//@version=5
+indicator("ema21 and sma21")
+x=ta.ema(close,21)
+y=ta.sma(close,21)
+plot(x,color=color.black)
+plot(y,color=color.red)
