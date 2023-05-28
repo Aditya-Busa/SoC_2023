@@ -3,4 +3,4 @@ This repository contains the codes from my Summer of Code 2023 Project. The proj
 
 I have learnt Technical Analysis from scratch (Indicators,Strategies,Candle-Sticks,Back-testing)(From Zerodha Varsity modules)
 
-I learnt the Fundamental Syntax and working of PineScript language from PineScript official documentation and YouTube links shared with us. I tried and learnt by executing several sample strategies and indicatiors from PineScript official Tutorial.
+I learnt the Fundamental Syntax and the working of PineScript language from PineScript official documentation and YouTube links shared with us. I tried and learnt by executing several sample strategies and indicatiors from PineScript official Tutorial.
