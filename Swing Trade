@@ -1,0 +1,9 @@
+//@version=5
+strategy("SwingTrade")
+Len=input(14)
+Factor=input(1.1)
+vol_fac=input(10)
+if close<ta.highest(close,Len) and close > ta.lowest(close,Len)*Factor and volume>ta.sma(volume,vol_fac)
+    strategy.entry("goLong",strategy.long)
+else
+    strategy.close("goLong")
