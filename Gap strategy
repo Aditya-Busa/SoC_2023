@@ -1,0 +1,10 @@
+//@version=5
+strategy("Customisable Death-Cross")
+if open>close[1] and open[1]<close[1]
+    strategy.entry("goLong",strategy.long)
+else 
+    strategy.close("goLong")
+if open < close[1] and open[1]>close[1]
+    strategy.entry("goShort",strategy.short) 
+else 
+    strategy.close("goShort")
