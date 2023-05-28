@@ -1,0 +1,8 @@
+//@version=5
+indicator("customised_macd")
+y=input(14,"slowlength")
+x=input(21,"fastlength")
+z=input(9,"signallength")
+[a,b,c]=ta.macd(close,x,y,z)
+plot(a,color = color.red)
+plot(b,color = color.black)
