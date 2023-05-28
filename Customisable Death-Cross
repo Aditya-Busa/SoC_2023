@@ -1,0 +1,8 @@
+//@version=5
+strategy("Customisable Death-Cross")
+x=input(50,"fast")
+y=input(100,"slow")
+if ta.ema(close,x)>ta.ema(close,y)
+    strategy.entry("goLong",strategy.long)
+else
+    strategy.close("goLong")
