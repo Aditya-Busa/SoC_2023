@@ -1,0 +1,13 @@
+//@version=5
+strategy("myscript",overlay = true)
+if ((close>open) and (close[1]>open[1]))
+    // while ((close>open) and (close[1]>open[1]))
+    strategy.entry("go long",strategy.long,1)
+else
+    strategy.close("go long")
+if ((close<open) and (close[1]<open[1]))
+    // while ((close>open) and (close[1]>open[1]))
+    strategy.entry("go short",strategy.short,1)
+else
+    strategy.close("go short")
+
